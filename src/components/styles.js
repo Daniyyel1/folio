@@ -189,6 +189,11 @@ background:linear-gradient(90deg,#4831d4 74%, #ccf381 26% );
 height:90vh;
 padding-block:5rem;
 
+
+.full.back{
+    background-color:#000;
+}
+
 .full p{
     color:#ccf381;
     font-size:15px;
@@ -240,6 +245,31 @@ padding-block:5rem;
     font-size:12px;
     width:200px;
     color:#ccf381;
+}
+
+.toggle{
+    height:30px;
+    width: 60px;
+    border-radius:50%/100%;
+    display:flex;
+    align-items:center;
+    background-color:gray;
+}
+
+.toggle.change{
+    background-color:green;
+}
+
+.slider{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    background-color:#fff
+}
+
+.slider.slide{
+    transform:translateX(27px);
+    background-color:#fff;
 }
 
 @media screen and (max-width: 900px){

@@ -11,6 +11,11 @@ const Navbar = () => {
   setIsOpen(!isOpen);
  }
 
+
+ const closeMenu = ()=>{
+  setIsOpen(!isOpen)
+ }
+
   return (
     <NavWrapper>
       <div className="nav genLayout">
@@ -20,10 +25,10 @@ const Navbar = () => {
      
      <div className= 'navRight'>
        <div className={`navItems ${isOpen ? 'open' : ''}`}>
-        <Link to="/">home</Link>
-        <Link className='good' to="/shelf">shelf</Link>
-        <Link to="/work">work</Link>
-        <Link to="contact">contact</Link>
+        <Link onClick={closeMenu} to="/">home</Link>
+        <Link onClick={closeMenu} className='good' to="/shelf">shelf</Link>
+        <Link onClick={closeMenu} to="/work">work</Link>
+        <Link onClick={closeMenu} to="contact">contact</Link>
        </div>
 
      </div>

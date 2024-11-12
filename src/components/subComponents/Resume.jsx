@@ -21,10 +21,6 @@ const Resume = () => {
                         </div>
                         <div className="box">
                             <div className="smallBox"></div>
-                            <p>Flutter</p>
-                        </div>
-                        <div className="box">
-                            <div className="smallBox"></div>
                             <p>Material UI</p>
                         </div>
                         <div className="box">
@@ -34,6 +30,10 @@ const Resume = () => {
                         <div className="box">
                             <div className="smallBox"></div>
                             <p>HTML & CSS</p>
+                        </div>
+                        <div className="box">
+                            <div className="smallBox"></div>
+                            <p>Responsive Design</p>
                         </div>
                     
                     </div>
