@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <div data-aos="fade-down" className="nav genLayout">
+      <div  className="nav genLayout">
       <h1>Daniel<span>Dev</span></h1>
       
       
