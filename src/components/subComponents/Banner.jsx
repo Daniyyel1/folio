@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BannerWrapper } from "../styles";
 import me from "../../assets/me.jpg";
 import { Typewriter } from "react-simple-typewriter";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Banner = () => {
   const [toggle, setToggle] = useState(false);
@@ -19,6 +21,10 @@ const Banner = () => {
     console.log(`Done after 5 loops!`);
   };
 
+   useEffect(()=>{
+      Aos.init({duration:500, easing: 'linear'})
+   },[])
+
   return (
     <BannerWrapper className="">
       <div className={`full genLayout ${toggle ? "back" : ""}`}>
@@ -34,7 +40,7 @@ const Banner = () => {
         </h3>
 
         <div className="bannerContainer">
-          <div className="bInfo">
+          <div data-aos="fade-up"  className="bInfo">
             <h1>
               Frontend
               <br /> Developer<span>.</span>
@@ -44,11 +50,11 @@ const Banner = () => {
               user experiences.
             </p>
           </div>
-          <div className="bannerImg">
+          <div data-aos="fade-left"  className="bannerImg">
             <img src={me} alt="me" />
           </div>
         </div>
-        <div className="span">
+          <div data-aos="fade-right" className="span">
           <p>
             Highly skilled at progressive enhancement, design systems & UI
             Engineering.

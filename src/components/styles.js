@@ -122,8 +122,9 @@ padding-block:2rem;
     background-color: #ccf381 ;
     top: 4.6rem;
     transition: 0.3s ease-in-out;
-    height: 100%;
+    height: 100vh;
     border-radius: 20px;
+    z-index:1;
 
 
    }

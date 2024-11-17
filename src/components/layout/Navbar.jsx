@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavWrapper } from '../styles'
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Navbar = () => {
 
@@ -16,9 +17,14 @@ const Navbar = () => {
   setIsOpen(!isOpen)
  }
 
+ useEffect(()=>{
+  Aos.init({duration:500, easing: 'linear'})
+},[])
+
+
   return (
     <NavWrapper>
-      <div className="nav genLayout">
+      <div data-aos="fade-down" className="nav genLayout">
       <h1>Daniel<span>Dev</span></h1>
       
       
